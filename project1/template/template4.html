@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'template4.css' %}">
+    <style>
+        h1.Component{color:green}
+    </style>
+</head>
+<body>
+    <h1>Global CSS</h1>
+    <h1 class="Component">Component CSS</h1>
+    <h1 style="color:red">Inline CSS</h1>
+</body>
+</html>

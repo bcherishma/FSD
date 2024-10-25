@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table border = "5",style="width:100%">
+        <th style="width:3%">PostId</th>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Body</th>
+        {%for objs in data %}
+        <tr>
+                 <td>{{objs.postId}}</td>
+                 <td>{{objs.id}}</td>
+                 <td>{{objs.name}}</td>
+                 <td>{{objs.email}}</td>
+                 <td>{{objs.body}}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
